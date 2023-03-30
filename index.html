@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipcart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="shortCut icon" href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <div class="navigation-Bar">
+            <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="">
+
+            </div>
+            <div class="search-menu">
+                <div class="search-cont">
+                    <input type="text" class="search-box" placeholder="Search for products, brands, more">
+                    <button class="search-button">
+
+                    </button>
+                    <svg width="20" height="20" viewBox="0 0 17 18" class="" xmlns="http://www.w3.org/2000/svg"><g fill="#2874F1" fill-rule="evenodd"><path class="_34RNph" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path><path class="_34RNph" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path></g></svg>
+
+                </div>
+
+            </div>
+            <div class="login">
+                <button>Login</button>
+
+            </div>
+            <div class="become-seller">
+                Become Seller
+
+            </div>
+            <div class="more">More
+                <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="zZ3yfL"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2gTTdy"></path></svg>
+
+            </div>
+            <div class="cart">
+                <svg class="V3C5bO" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path class="_1bS9ic" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg>
+                Cart
+
+            </div>
+
+        </div>
+    </header>
+    <!-- <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          
+          <a class="navbar-brand" href="#"><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="" style="width: 100x;height:30px;color:white;color:rgb(80, 72, 72)"></a>
+
+          <input type="text" class="search-box" placeholder="Search for products, brands, more" style="width:500px" >
+                    <button class="search-button">
+                        <svg width="20" height="20" viewBox="0 0 17 18" class="" xmlns="http://www.w3.org/2000/svg"><g fill="#2874F1" fill-rule="evenodd"><path class="_34RNph" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path><path class="_34RNph" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path></g></svg>
+                    </button>
+
+           <button style="background-color: white;color:blue;font-weight: bold;margin: 1px 15px 1px 15px;">Login</button>
+
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <p class="nav-link" href="#" style="color:white;font-size: 20px;margin-left: 40px;">Become Celler<span class="sr-only">(current)</span></p>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link" href="#" style="color:white;font-size: 20px;margin-left: 40px;">More<svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="zZ3yfL"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2gTTdy"></path></svg></p>
+        
+            </li>
+            <li class="nav-item">
+              <p class="nav-link disabled" style="color:white;font-size: 20px;margin-left: 40px;">Cart <svg class="V3C5bO" width="14" height="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path class="_1bS9ic" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg></p>
+              
+            </li>
+          </ul>
+          
+        </div>
+      </nav> -->
+
+      <section class="section-1" style="display:flex;flex-direction:row">
+        <div class="section-1-image">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d154c0b4d536c1cf.png?q=100" alt="">
+            Top Offers
+             
+        </div>
+        <div class="section-1-image">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5972d5da375c81c7.png?q=100" alt="">
+            Top Offers
+             
+        </div>
+        <div class="section-1-image">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100" alt="">
+            Top Offers
+             
+        </div>
+        <div class="section-1-image">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5972d5da375c81c7.png?q=100" alt="">
+            Top Offers
+             
+        </div>
+        <div class="section-1-image">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100" alt="">
+            Top Offers
+             
+        </div>
+        <div class="section-1-image">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100" alt="">
+            Top Offers
+        </div>
+        <div class="section-1-image">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100" alt="">
+            Top Offers
+        </div>
+
+      </section>
+
+      <section class="section-2">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/free-psd/horizontal-banner-template-big-sale-with-woman-shopping-bags_23-2148786755.jpg?w=2000" class="d-block w-100" alt="..." style="width:100%;margin-top: 15px;height:300px;border: 5px solid blue;">
+              </div>
+              <div class="carousel-item active">
+                <img src="https://img.freepik.com/free-vector/realistic-shopping-online-landing-page_52683-37635.jpg?w=2000" alt="..." style="width:100%;margin-top: 15px;height:300px;border: 5px solid blue;">
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/free-psd/landing-page-online-fashion-sale_23-2148585401.jpg?w=2000" class="d-block w-100" alt="..." style="width:100%;margin-top: 15px;height:300px;border: 5px solid blue;">>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+     </section>
+
+     <section class="section-3">
+        <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Special title treatment</h5> -->
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzZFaunq5YAeyup61mEh1sniwN5Ka647VlMg&usqp=CAU" alt=""><br>
+                  <p style="color:green;font-size: 17px;">1 Plus Best Offers</p>
+                  <a href="#" class="btn btn-primary" style="margin-top:10px;align-items: center;">View All</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <img src="https://thumbs.dreamstime.com/b/dslr-camera-13618571.jpg" alt="" style="width:200px;height:200px"><br>
+                    <p style="color:green;font-size: 17px;">Cameras:Upto 3000 RS</p>
+                    <a href="#" class="btn btn-primary" style="margin-top:10px;align-items: center;">View All</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQibfwk9vgSg84vf-oK6aoNqmIt_2i2oflhQA&usqp=CAU" alt="" style="width:200px;height:200px"><br>
+                    <p style="color:green;font-size: 17px;">Web Cam Under 1500 RS</p>
+                    <a href="#" class="btn btn-primary" style="margin-top:10px;align-items: center;">View All</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6UDZEMs6iWoIxPV2K67EMyrzkqJGsWhYQ8w&usqp=CAU" alt="" style="width:200px;height:200px"><br>
+                    <a href="#" class="btn btn-primary" style="margin-top:20px;align-items: center;">View All</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+     </section>
+    
+     <section class="section-4">
+        <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Special title treatment</h5> -->
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBolYHKW1SfhQn6YYZ45ystG3AU4UkgFuFA&usqp=CAU" alt="" style="width:200px;height:200px"><br>
+                  <p style="color:green;font-size: 17px;">Geared Cycles under 5000</p>
+                  <a href="#" class="btn btn-primary" style="margin-top:10px;align-items: center;">View All</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <img src="https://thumbs.dreamstime.com/b/dslr-camera-13618571.jpg" alt="" style="width:200px;height:200px"><br>
+                    <p style="color:green;font-size: 17px;">Under 500 RS Toys</p>
+                    <a href="#" class="btn btn-primary" style="margin-top:20px;align-items: center;">View All</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9YsvOjBNIYBeVx8Nvf2cch4VD-_BWvvIkgg&usqp=CAU" alt="" style="width:200px;height:200px"><br>
+                    <p style="color:green;font-size: 17px;">Under 500 RS</p>
+                    <a href="#" class="btn btn-primary" style="margin-top:20px;align-items: center;">View All</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <img src="https://media.istockphoto.com/id/1135609382/photo/online-shopping-concept.jpg?s=612x612&w=0&k=20&c=dzdsUIHhLk6fnMpGccgBOwsTFOqxfZZLVI2N6_Yf9Uc=" alt="" style="width:200px;height:200px"><br>
+
+                    <a href="#" class="btn btn-primary" style="margin-top:20px;align-items: center;">View All</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+     </section>
+   
+     <section class="section-5">
+        <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Special title treatment</h5> -->
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRDVeefoi17zlE0YSEwRJeIMRtzEZfYQw7MA&usqp=CAU" alt="" style="width:200px;height:200px"><br>
+                  <p style="color:green;font-size: 17px;">T shirts Under 500 RS</p>
+                  <a href="#" class="btn btn-primary" style="margin-top:20px;align-items: center;">View All</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ73vzYGVZbiXQxWRhxqMolVHHMyXahoRwwzOZgJDRCkn2tAJ78CXC6CeD1zH91hMJJ-W0&usqp=CAU" alt=""><br>
+                    <p style="color:green;font-size: 17px;">Pants under 200</p>
+                    <a href="#" class="btn btn-primary" style="margin-top:20px;align-items: center;">View All</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUknqRg_2wCaEIsJ45t6ZO-lDGD6AsruQoQ&usqp=CAU" alt="" style="width:200px;height:200px"><br>
+                    <p style="color:green;font-size: 17px;">Under 300 RS </p>
+                    <a href="#" class="btn btn-primary" style="margin-top:20px;align-items: center;">View All</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Special title treatment</h5> -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsBXVWMQb4-HTNIuZOG0yjoakoSV7EQpi4Q&usqp=CAU" alt=""style="width:200px;height:200px"><br>
+                    <a href="#" class="btn btn-primary" style="margin-top:20px;align-items: center;">View All</a>
+                  </div>
+                </div>
+              </div>
+
+        
+        </div>
+
+     </section>
+
+     <section class="section-6">
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">SAMSUNG 8.5KG 5 star fully Automatic </h5>
+                  <p style="color:green;font-size: 17px;">Upto 30000</p>
+                 <img src="https://www.sansuiworld.com/images/washingmachine/front-load.png" alt="" style="width:300px;height:400px"><br>
+                  <a href="#" class="btn btn-primary" style="margin-top: 20px;">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">LG Semi Automatic 10 KG</h5>
+                  <p style="color:green;font-size: 17px;">Under 10000 RS</p>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8IP6Nmk-AiG9EGHnlzTmUixZ0WD-IIxxgOw&usqp=CAU" alt=""style="width:300px;height:400px"><br>
+                  <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+     </section>
+
+     <section class="section-7">
+        <section class="section-5">
+            <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <!-- <h5 class="card-title">Special title treatment</h5> -->
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRDVeefoi17zlE0YSEwRJeIMRtzEZfYQw7MA&usqp=CAU" alt="" style="width:200px;height:200px"><br>
+                      <p style="color:green;font-size: 17px;">Under 500 RS</p>
+                      <a href="#" class="btn btn-primary" style="margin-top:10px;align-items: center;">View All</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <!-- <h5 class="card-title">Special title treatment</h5> -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ73vzYGVZbiXQxWRhxqMolVHHMyXahoRwwzOZgJDRCkn2tAJ78CXC6CeD1zH91hMJJ-W0&usqp=CAU" alt=""><br>
+                        <p style="color:green;font-size: 17px;">Upto 1000 RS</p>
+                        <a href="#" class="btn btn-primary" style="margin-top:10px;align-items: center;">View All</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <!-- <h5 class="card-title">Special title treatment</h5> -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUknqRg_2wCaEIsJ45t6ZO-lDGD6AsruQoQ&usqp=CAU" alt="" style="width:200px;height:200px"><br>
+                        <p style="color:green;font-size: 17px;">Best Offers</p>
+                        <a href="#" class="btn btn-primary" style="margin-top:10px;align-items: center;">View All</a>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <!-- <h5 class="card-title">Special title treatment</h5> -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsBXVWMQb4-HTNIuZOG0yjoakoSV7EQpi4Q&usqp=CAU" alt=""style="width:200px;height:200px"><br>
+                        <p style="color:green;font-size: 17px;">Under 200 RS</p>
+                        <a href="#" class="btn btn-primary" style="margin-top:10px;align-items: center;">View All</a>
+                      </div>
+                    </div>
+                  </div>
+    
+            
+            </div>
+    
+         </section>
+
+     </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
